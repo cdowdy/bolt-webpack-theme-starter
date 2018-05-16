@@ -1,0 +1,6 @@
+{# creates meta tags
+   pass it the meta tag name along with the content
+#}
+{% macro tag(name, content)%}
+<meta name="{{ name }}" content="{{ content }}">
+{% endblock tag %}

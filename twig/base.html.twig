@@ -13,6 +13,8 @@
   </title>
 
   {% block metatags %}
+      {% import 'macros/_metatags.html.twig' as meta %}
+      {{ meta.tag( 'description', '') }}
   <meta name="description" content="">
   {% endblock metatags %}
   <link rel="stylesheet" href="{{ asset('dist/app.css', 'theme') }}">
