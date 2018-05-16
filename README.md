@@ -25,7 +25,7 @@ This allows your assets to be served from the "dist" directory with the hash tha
 this in a template:  
 
 ```twig
-<link rel="stylesheet" href="{{ asset('dist/app.css', 'theme') }}">
+<link rel="stylesheet" href="{{ asset('dist/css/app.css', 'theme') }}">
 ```  
 
 will produce:  
