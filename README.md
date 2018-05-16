@@ -10,7 +10,7 @@ This includes:
 - postcss-loader
 - autoprefixer
 
-It should be used fas a "jumping off point".  
+It should be used as a "jumping off point".  
 
 You'll need to make one adjustment to either you ``config.yml`` or your ``config_local.yml`` in order for the webpack version assets to be delivered. That is as follows:  
 
