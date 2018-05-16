@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="{{ htmllang() }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  {# see #1 in readme #}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {%- if record.title is defined %}{{ record.title|striptags }} | {% endif -%}
+    {{ config.get('general/sitename') -}}
+    {% if record.title is not defined and config.get('general/payoff') %} | {{ config.get('general/payoff') }}{% endif -%}
+  </title>
+
+  {% block metatags %}
+  <meta name="description" content="">
+  {% endblock metatags %}
+  <link rel="stylesheet" href="{{ asset('dist/app.css', 'theme') }}">
+</head>
+<body>
+<header>
+
+</header>
+<main>
+  {% block body %}
+  {% endblock body %}
+</main>
+
+<script src="{{ asset('dist/app.js', 'theme') }}"></script>
+</body>
+</html>
