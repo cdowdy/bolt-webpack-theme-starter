@@ -12,7 +12,7 @@ This includes:
 
 It should be used as a "jumping off point".  
 
-You'll need to make one adjustment to either you ``config.yml`` or your ``config_local.yml`` in order for the webpack version assets to be delivered. That is as follows:  
+You'll need to make one adjustment to either you ``config.yml`` or your ``config_local.yml`` in order for the webpack version assets to be delivered. **this is undocumented by Bolt**, and they currently have no interest in documenting this or accepting pull requests to document their undocumented use of something for developers. If you follow the docs that bolt links too they use a different config and it wont work. That change is as follows:  
 
 ```yaml  
 assets:
@@ -20,7 +20,7 @@ assets:
         json_manifest_path: "/dist/manifest.json"
 ```  
 
-This allows your assets to be served from the "dist" directory with the hash that webpack creates. 
+This allows your assets to be served from the "dist" directory with the hash that webpack creates.   
 
 this in a template:  
 
